@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <title>
+      adri326's alternative page
+    </title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/desktop.css" media="screen and (min-device-width: 600px)">
+    <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-device-width: 600px)">
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:light,thin" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+    <script src="loader.js"></script>
+    <script>
+      window.addEventListener("load", function() {
+        var xhr = new xmlHttpRequest();
+        xhr.open("GET", "https://scratch.mit.edu/varserver/123627330/", true);
+        xhr.send();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            
+          }
+        };
+      });
+    </script>
   </head>
-  <body>
-    
+  <body class="material-style black-color">
+    <header id="header" class="blueBG">
+      <div class="center">
+          From scratch to the web
+      </div>
+    </header>
+    <div id="container">
+      <div class="spacer"></div>
+      <div class="small-bar blueBG light">
+        The value of the variable is
+      </div>
+      <div class="medium-bar blueBG thin" id="variable">
+        
+      </div>
+    </div>
   </body>
 </html>
